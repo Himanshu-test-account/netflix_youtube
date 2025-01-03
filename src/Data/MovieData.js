@@ -9,10 +9,10 @@ const Movies = [
     description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
     rating: 8.8,
     cast: [
-      { name: "Leonardo DiCaprio", profilePath: "https://path/to/leonardo.jpg", role: "Dom Cobb" },
-      { name: "Joseph Gordon-Levitt", profilePath: "https://path/to/joseph.jpg", role: "Arthur" },
-      { name: "Ellen Page", profilePath: "https://path/to/ellen.jpg", role: "Ariadne" },
-      { name: "Tom Hardy", profilePath: "https://path/to/tom.jpg", role: "Eames" }
+      { name: "Leonardo DiCaprio", profilePath: "/images/movies/img_1.png", role: "Dom Cobb" },
+      { name: "Joseph Gordon-Levitt", profilePath: "/images/movies/img_2.png", role: "Arthur" },
+      { name: "Ellen Page", profilePath: "/images/movies/img_2.png", role: "Ariadne" },
+      { name: "Tom Hardy", profilePath: "/images/movies/img_2.png", role: "Eames" }
     ],
     director: "Christopher Nolan",
     trailerLink: "https://www.youtube.com/watch?v=YoHD9XEInc0"
@@ -27,10 +27,10 @@ const Movies = [
     description: "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, forcing Batman to come out of retirement and fight him.",
     rating: 9.0,
     cast: [
-      { name: "Christian Bale", profilePath: "https://path/to/christian.jpg", role: "Bruce Wayne / Batman" },
-      { name: "Heath Ledger", profilePath: "https://path/to/ledger.jpg", role: "The Joker" },
-      { name: "Aaron Eckhart", profilePath: "https://path/to/aaron.jpg", role: "Harvey Dent / Two-Face" },
-      { name: "Maggie Gyllenhaal", profilePath: "https://path/to/maggie.jpg", role: "Rachel Dawes" }
+      { name: "Christian Bale", profilePath: "/images/movies/img_2.png", role: "Bruce Wayne / Batman" },
+      { name: "Heath Ledger", profilePath: "/images/movies/img_2.png", role: "The Joker" },
+      { name: "Aaron Eckhart", profilePath: "/images/movies/img_2.png", role: "Harvey Dent / Two-Face" },
+      { name: "Maggie Gyllenhaal", profilePath: "/images/movies/img_2.png", role: "Rachel Dawes" }
     ],
     director: "Christopher Nolan",
     trailerLink: "https://www.youtube.com/watch?v=EXeTwQWrcwY"
@@ -45,10 +45,10 @@ const Movies = [
     description: "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
     rating: 8.7,
     cast: [
-      { name: "Keanu Reeves", profilePath: "https://path/to/keanu.jpg", role: "Neo" },
-      { name: "Laurence Fishburne", profilePath: "https://path/to/laurence.jpg", role: "Morpheus" },
-      { name: "Carrie-Anne Moss", profilePath: "https://path/to/carrie.jpg", role: "Trinity" },
-      { name: "Hugo Weaving", profilePath: "https://path/to/hugo.jpg", role: "Agent Smith" }
+      { name: "Keanu Reeves", profilePath: "/images/movies/img_2.png", role: "Neo" },
+      { name: "Laurence Fishburne", profilePath: "/images/movies/img_2.png", role: "Morpheus" },
+      { name: "Carrie-Anne Moss", profilePath: "/images/movies/img_2.png", role: "Trinity" },
+      { name: "Hugo Weaving", profilePath: "/images/movies/img_2.png", role: "Agent Smith" }
     ],
     director: "The Wachowskis",
     trailerLink: "https://www.youtube.com/watch?v=vKQi3bBA1y8"
@@ -63,10 +63,10 @@ const Movies = [
     description: "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
     rating: 7.8,
     cast: [
-      { name: "Sam Worthington", profilePath: "https://path/to/sam.jpg", role: "Jake Sully" },
-      { name: "Zoe Saldana", profilePath: "https://path/to/zoe.jpg", role: "Neytiri" },
-      { name: "Sigourney Weaver", profilePath: "https://path/to/sigourney.jpg", role: "Dr. Grace Augustine" },
-      { name: "Stephen Lang", profilePath: "https://path/to/stephen.jpg", role: "Colonel Miles Quaritch" }
+      { name: "Sam Worthington", profilePath: "/images/movies/img_2.png", role: "Jake Sully" },
+      { name: "Zoe Saldana", profilePath: "/images/movies/img_2.png", role: "Neytiri" },
+      { name: "Sigourney Weaver", profilePath: "/images/movies/img_2.png", role: "Dr. Grace Augustine" },
+      { name: "Stephen Lang", profilePath: "/images/movies/img_2.png", role: "Colonel Miles Quaritch" }
     ],
     director: "James Cameron",
     trailerLink: "https://www.youtube.com/watch?v=5PSNL1qE6VY"
