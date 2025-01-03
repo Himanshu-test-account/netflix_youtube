@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.linear-bg{
+  background: linear-gradient(260.82deg, #07091c00 0.17%, #080a1ad6 99.87%);
+}
+body, html {
+    font-family: 'Poppins', 'sans-sarif';
+    font-size: 16px;
+    /* font-weight:400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input:focus,textarea:focus,select:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Basic class for tailwind */
+.hoveres{
+  @apply hidden
+}  
+.hovered:hover .hoveres{
+  @apply flex-colo
+}
+.flex-colo{
+  @apply flex flex-col justify-center items-center;
+}
+.flex-rows{
+  @apply flex flex-row justify-center items-center;
+}
+.flex-btn{
+  @apply flex  justify-between items-center;
+}
+.transitions {
+  @apply transition duration-300 ease-in;
+}
+.zindex {
+    z-index : 1000;
+}
+
+/* Drawer */
+.drawer {
+  overflow: visible;
+}
+
+.drawer .drawer-content-wrapper{
+  width: 100%;
+}
+
+/* Drawer Base Styles */
+.drawer {
+  @apply fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-50;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none; /* Prevent interactions when hidden */
+}
+
+/* Drawer Open State */
+.drawer.open {
+  transform: translateX(0); /* Slide in from left */
+  opacity: 1; /* Make it visible */
+  pointer-events: auto; /* Enable interactions when open */
+}
+
+/* Drawer Container */
+.drawer-container {
+  @apply flex flex-col bg-white w-80 h-full absolute right-0 top-0;
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Drawer Header (with Close Button) */
+.drawer-header {
+  @apply flex items-center justify-between bg-gray-900 text-white p-4 relative;
+}
+
+.drawer-header .close-btn {
+  @apply cursor-pointer text-2xl;
+}
+
+/* Drawer Content Section */
+.drawer-content {
+  @apply overflow-auto h-full max-h-[calc(100vh-80px)] p-4;
+}
+
+/* Item Styles inside Drawer */
+.drawer-content .item {
+  @apply p-4 text-lg text-gray-900 cursor-pointer hover:bg-gray-200 relative rounded-lg transition duration-300 ease-out;
+}
+
+/* Notification Badge (e.g., on Favourite) */
+.drawer-content .badge {
+  @apply absolute top-0 right-0 w-5 h-5 bg-red-600 text-white text-xs rounded-full flex items-center justify-center;
+}
+
+/* Drawer Toggle Button (Hamburger) */
+.drawer-btn {
+  @apply flex items-center justify-center w-16 h-16 bg-red-600 text-white text-3xl rounded-full fixed bottom-10 right-10 z-50 cursor-pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.drawer-btn:hover {
+  @apply bg-red-700;
+}
+
+/* Slide-Out Animation */
+@keyframes drawer-slide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Drawer Content Items (hover and transform) */
+.drawer-content .item:hover {
+  transform: translateX(5px); /* Slightly move to the right when hovering */
 }
