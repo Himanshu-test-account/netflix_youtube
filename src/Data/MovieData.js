@@ -81,10 +81,10 @@ const Movies = [
     description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from subjugating the Earth.",
     rating: 8.0,
     cast: [
-      { name: "Robert Downey Jr.", profilePath: "https://path/to/robert.jpg", role: "Tony Stark / Iron Man" },
-      { name: "Chris Hemsworth", profilePath: "https://path/to/chris.jpg", role: "Thor" },
-      { name: "Mark Ruffalo", profilePath: "https://path/to/mark.jpg", role: "Bruce Banner / Hulk" },
-      { name: "Scarlett Johansson", profilePath: "https://path/to/scarlett.jpg", role: "Natasha Romanoff / Black Widow" }
+      { name: "Robert Downey Jr.", profilePath: "/images/movies/img_1.png", role: "Tony Stark / Iron Man" },
+      { name: "Chris Hemsworth", profilePath: "/images/movies/img_2.png", role: "Thor" },
+      { name: "Mark Ruffalo", profilePath: "/images/movies/detail_3.webp", role: "Bruce Banner / Hulk" },
+      { name: "Scarlett Johansson", profilePath: "/images/movies/detail_4.webp", role: "Natasha Romanoff / Black Widow" }
     ],
     director: "Joss Whedon",
     trailerLink: "https://www.youtube.com/watch?v=eOrNdBpGMv8"

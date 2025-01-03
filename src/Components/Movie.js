@@ -5,7 +5,7 @@ import { FaHeart } from 'react-icons/fa';
 function Movie({ movie }) {
   return (
     <div className="border border-border p-1 hover:scale-95 transitions relative rounded overflow-hidden">
-      <Link to={movie?.image} className='w-full'>
+      <Link to={`/movies/${movie?.name}`} className='w-full'>
         <img
           src={movie?.image}
           alt={movie?.name}
